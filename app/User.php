@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Models\Article;
+use App\Models\Offer;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -36,4 +38,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public  function offers()
+    {
+        return $this->hasMany(Offer::class);
+    }
+    public function article()
+    {
+        return $this->hasMany(Article::class);
+    }
+
 }

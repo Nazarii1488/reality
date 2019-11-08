@@ -9,22 +9,22 @@
             <div class="carousel-item active">
                 <img src="/images/slider1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h5>Duvan z podyshkamu</h5>
+                    <p>Sold for 3000 UAH</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/images/slider2.jpg" class="d-block w-100" alt="..." >
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h5>Kavovui stoluk</h5>
+                    <p>Sold for 2500 UAH</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="/images/slider3.jpg" class="d-block w-100" alt="..." >
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h5>Luxury cottage</h5>
+                    <p>The price is negotiable</p>
                 </div>
             </div>
         </div>

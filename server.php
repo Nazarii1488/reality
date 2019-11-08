@@ -1,4 +1,4 @@
-<?php
+sudo apt install php-http<?php
 
 /**
  * Laravel - A PHP Framework For Web Artisans
