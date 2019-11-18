@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class UserImagesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('user_images', function (Blueprint $table) {
@@ -24,11 +19,6 @@ class UserImagesTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         //

@@ -17,7 +17,7 @@ class Article extends Model
     }
     public function images()
     {
-        return $this->hasMany(ImageOffer::class);
+        return $this->hasMany(ImageArticle::class);
     }
     public function preview()
     {

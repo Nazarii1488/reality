@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('admin.layouts.main')
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -10,53 +10,51 @@
                                 <i class="fa fa-close" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <h2>Add Offer</h2>
+                        <h2>Edit Offer</h2>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{route('offers-add-submit')}}" enctype="multipart/form-data">
+                        <form method="POST" action="{{route('admin-offers-edit-submit', $offer->id)}}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">Title</label>
 
                                 <div class="col-md-6">
-                                    <input id="title" name="title" value="" class="form-control" />
-                                    @error('title')
-                                    <span class="text-danger" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
+                                    <input id="title" name="title" value="{{$offer->title}}" class="form-control" />
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="price" class="col-md-4 col-form-label text-md-right">Price</label>
 
                                 <div class="col-md-6">
-                                    <input id="price" name="price" value="" class="form-control" placeholder="0.00" />
-                                    @error('price')
-                                    <span class="text-danger" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
-                                </div>
-
-
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="images" class="col-mb-4 col-form-label text-md-center">Add Images</label>
-
-                                <div class="col-mb-6">
-                                    <input type="file" name="images[]" id="images" multiple />
+                                    <input id="price" name="price" value="{{$offer->price}}" class="form-control" placeholder="0.00" />
                                 </div>
                             </div>
-
-
                             <div class="form-group row">
                                 <label for="description" class="col-md-4 col-form-label text-md-right">Description</label>
 
                                 <div class="col-md-6">
-                                    <textarea id="description" name="description" class="form-control" ></textarea>
+                                    <textarea id="description" name="description" class="form-control" >{{$offer->description}}</textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <span class="col-md-4 col-form-label text-md-right">Images</span>
+
+                                <div class="col-md-6">
+                                    @foreach($offer->images as $image)
+                                        <div class="mb-5">
+                                            <a href="{{route('admin-offers-edit-image',[$offer->id,$image->id])}}" class="btn btn-danger">remove</a>
+                                            <img src="{{asset('/storage/offers/'.$offer->id.'/'.$image->name)}}" width="200" height="200">
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="images" class="col-md-4 col-form-label text-md-right">Add Images</label>
+                                <div class="col-md-6">
+                                    <input type="file" name="images[]" id="images" multiple />
                                 </div>
                             </div>
 

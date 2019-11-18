@@ -16,7 +16,7 @@
                     </ul>
                 </div>
 
-            </aside><!-- /.blog-sidebar -->
+            </aside>
             <div class="col-md-8 blog-main">
                 <div class="card">
                     <nav>
@@ -66,14 +66,14 @@
                                             <a href="{{route('article-edit', $article->id)}}" class="btn btn-sm btn-outline-secondary">Edit</a>
                                             <a href="{{route('article-delete', $article->id)}}" class="btn btn-sm btn-outline-danger">Delete</a>
                                         </div>
-                                    </div><!-- /.blog-post -->
-                                </div><!-- /.blog-main -->
+                                    </div>
+                                </div>
                                 @endforeach
-                            </div><!-- /.row -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- /.blog-main -->
-        </div><!-- /.row -->
-    </main><!-- /.container -->
+            </div>
+        </div>
+    </main>
 @stop

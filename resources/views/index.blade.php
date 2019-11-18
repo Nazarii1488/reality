@@ -93,8 +93,7 @@
                     <a class="btn btn-outline-primary" href="{{route('article')}}">View all</a>
                 </nav>
 
-            </div><!-- /.blog-main -->
-
+            </div>
 
             <aside style="background-color: aqua" class="col-md-4 blog-sidebar">
                 <div class="p-4 mb-3 bg-light rounded">
@@ -115,11 +114,11 @@
                 </div>
 
 
-            </aside><!-- /.blog-sidebar -->
+            </aside>
 
-        </div><!-- /.row -->
+        </div>
 
-    </section><!-- /.container -->
+    </section>
 
     </main>
 @stop

@@ -16,7 +16,6 @@ class UpdateArticleTable extends Migration
         });
     }
 
-
     public function down()
     {
         Schema::table('payouts', function (Blueprint $table) {

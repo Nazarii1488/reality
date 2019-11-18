@@ -16,7 +16,7 @@
                     </ul>
                 </div>
 
-            </aside><!-- /.blog-sidebar -->
+            </aside>
             <div class="col-md-8 blog-main">
                 <div class="card">
                     <div class="card-body">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- /.blog-main -->
-        </div><!-- /.row -->
-    </main><!-- /.container -->
+            </div>
+        </div>
+    </main>
 @stop
