@@ -7,10 +7,10 @@
                     <h3>All Article</h3>
                 </div>
                 <div class="float-left">
-                    Find <b>{{$article->total()}}</b> rows, page <b>{{$article->currentPage()}} / {{$article->lastPage()}}</b>
+                    Find <b>{{$articles->total()}}</b> rows, page <b>{{$articles->currentPage()}} / {{$articles->lastPage()}}</b>
                 </div>
                 <div class="float-right">
-                    {!! $article->links(); !!}
+                    {!! $articles->links(); !!}
                 </div>
                 <table class="table table-center table-brd a-color">
                     <thead class="thead-light">
@@ -34,7 +34,7 @@
                     </tbody>
                 </table>
                 <div class="float-right">
-                    {!! $article->links(); !!}
+                    {!! $articles->links(); !!}
                 </div>
             </div>
         </div>

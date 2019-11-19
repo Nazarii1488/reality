@@ -13,8 +13,8 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $article = Article::orderBy('id','DESC')->paginate(9);
-        return view('admin/article/index',compact('article'));
+        $articles = Article::orderBy('id','DESC')->paginate(9);
+        return view('admin/article/index',compact('articles'));
     }
 
     public function edit(Article $article)
